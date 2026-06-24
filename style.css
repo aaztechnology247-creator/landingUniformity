@@ -1,0 +1,225 @@
+* { margin: 0; padding: 0; box-sizing: border-box; 
+  font-family:alexandria family, sans-serif;
+ }
+
+
+
+  body {
+    background:  #F8F3EF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    
+  }
+
+  
+  .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    right: 50%;
+    left: 50%;   
+  }
+
+
+  .name-block {
+    text-align: center;
+    
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: 500;
+    color: #441111;
+    letter-spacing: 1px;
+      
+  } 
+
+  .social-row {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: -10px;
+    color: #441111;
+  }
+
+  .ticker {
+    background: #98b4b8;
+    padding:  10px;
+    overflow: hidden;
+    white-space:nowrap;
+    border:solid #441111 1px;
+    padding-bottom: -20%;
+    margin-left: -5%;
+    width: 100%;
+
+  }
+
+  .ticker-inner {
+    display: flex;
+    gap: 70px;
+    animation: ticker 30s linear infinite;
+    margin-top: 10px;
+    padding-bottom: -10%;
+    margin: 0%;
+    
+  }
+
+  .ticker-inner  img {
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .ticker span {
+    font-family: "alexandria",sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #441111;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+
+.ticker:hover .ticker-inner {
+    animation-play-state: paused;
+}
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+
+  .name-parents #text{
+   
+    color: #441111;
+    font-family:'Cormorant Garamond', serif ;
+    font-size: 35px;
+    
+    
+  }
+  #text i {
+    font-family:'Cormorant Garamond', serif ;    
+  }
+
+  .social-dot {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid rgba(192, 57, 43, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #441111;
+  }
+
+  .social-dot:hover {
+    background: rgba(42, 12, 7, 0.2);
+    border-color: #490a03;
+    transform: scale(1.1);
+  }
+
+  .social-link:hover { opacity: 8; }
+
+  .social-link svg {
+      width: 35px;
+      height: 35px;
+      fill: #f7f7f7;
+      
+  }
+.footer-wave{
+    width: 100%;
+    /* transform: scale(1); */
+    transform-origin: center;
+    margin: 0; padding: 0;
+    margin-left: -3%;
+   
+}
+
+.footer-wave img{
+    /* width: 100%; */
+    width:100vw;
+    height: Auto;
+    display: block;
+    color: #441111; 
+    margin: 0; padding: 0;
+    
+    
+        
+}
+
+
+
+ @media (max-width: 1000px   ) {
+  .profile-wrapper {
+        width:95%;
+        height: auto;
+       
+        
+    }
+    .profile-card {
+        width: 80%;
+        height: auto;
+    }
+    .name {
+        font-size: 60px;
+
+    }
+
+.social-dot {
+    width: 100px;
+    height: 100px;
+   
+  }
+   .social-link svg {
+      width: 60px;
+      height: 60px;   
+  }
+  #whatsapplogo svg {
+      width: 60px;
+      height: 58px;   
+  }
+
+ 
+ }
+ 
+
+  @media screen and (max-width: 900px ) {
+  .profile-wrapper {
+        width:85%;
+        
+        
+    }
+    .profile-card {
+        width: 70%;
+        height: auto;
+    }
+    .name {
+        font-size: 11px;
+
+    }
+  
+  .social-dot {
+    width: 50px;
+    height: 50px;
+    
+   
+  }
+   .social-link svg {
+      width: 40px;
+      height: 40px;   
+  }
+  #whatsapplogo svg {
+      width: 35px;
+      height: 35px;   
+  }
+}
+ 
